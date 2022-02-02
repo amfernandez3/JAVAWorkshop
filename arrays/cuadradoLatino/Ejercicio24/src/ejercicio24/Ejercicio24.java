@@ -5,10 +5,6 @@
  */
 package ejercicio24;
 
-/**
- *
- * @author jnieto
- */
 public class Ejercicio24 {
 
     /**
