@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosBásicos/Anagramas/Anagramas.iml" filepath="$PROJECT_DIR$/ejerciciosBásicos/Anagramas/Anagramas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosBásicos/AreaTriangulo/AreaTriangulo.iml" filepath="$PROJECT_DIR$/ejerciciosBásicos/AreaTriangulo/AreaTriangulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BattleSimulator/BattleSimulator.iml" filepath="$PROJECT_DIR$/BattleSimulator/BattleSimulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAVAWorkshop.iml" filepath="$PROJECT_DIR$/.idea/JAVAWorkshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arrays/arrays.iml" filepath="$PROJECT_DIR$/arrays/arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficheros/ficheros.iml" filepath="$PROJECT_DIR$/ficheros/ficheros.iml" />
+    </modules>
+  </component>
+</project>

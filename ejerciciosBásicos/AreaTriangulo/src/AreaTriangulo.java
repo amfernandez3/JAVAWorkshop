@@ -19,7 +19,7 @@ public class AreaTriangulo {
         
         
         //Sentencias de asignación
-        System.out.println("Calculadora de Area de triángulos.");
+        System.out.println("Calculadora de Area de triángulos (b*a/2).");
         System.out.println("Introduce la medida de la base:");
         base = scan.nextDouble();
         System.out.println("Introduce la medida de la altura:");
