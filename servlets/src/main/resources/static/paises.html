@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Selecciona los países que has visitado!</h1>
+<form action="/PaisesServlet" method="get">
+    <label for="paises">Elige los países:</label>
+    <select id="paises" name="paises" multiple size="5" required>
+        <option value="Francia">Francia</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Japón">Japón</option>
+        <option value="Islandia">Islandia</option>
+        <option value="Grecia">Grecia</option>
+    </select>
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
