@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modificación de Precio</title>
+</head>
+<body>
+<h1>Modificación de Precio</h1>
+<form action="/modificacion" method="post">
+    <label for="indice">Índice del Producto a Modificar:</label>
+    <input type="number" id="indice" name="indice" required>
+    <br>
+    <label for="nuevoPrecio">Nuevo Precio:</label>
+    <input type="number" id="nuevoPrecio" name="nuevoPrecio" step="0.01" required>
+    <br>
+    <input type="submit" value="Modificar Precio">
+</form>
+</body>
+</html>

@@ -1,5 +1,6 @@
 package com.cursojava.servlets.servlets;
 
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -7,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class PaisesServlet extends HttpServlet {
+public class ComidasServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -15,21 +16,19 @@ public class PaisesServlet extends HttpServlet {
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
-        out.println("<html><head><title>Paises Visitados</title></head><body>");
+        out.println("<html><head><title>Comidas Seleccionadas</title></head><body>");
+        out.println("<h2>Comidas que te gustan:</h2>");
 
-        // Obtén el parámetro 'paises' del formulario (selección múltiple)
-        String[] paises = request.getParameterValues("paises");
+        String[] comidas = request.getParameterValues("comidas");
 
-        // Responde con los países seleccionados
-        out.println("<h2>Países que has visitado:</h2>");
-        if (paises != null && paises.length > 0) {
+        if (comidas != null && comidas.length > 0) {
             out.println("<ul>");
-            for (String pais : paises) {
-                out.println("<li>" + pais + "</li>");
+            for (String comida : comidas) {
+                out.println("<li>" + comida + "</li>");
             }
             out.println("</ul>");
         } else {
-            out.println("<p>No has seleccionado ningún país.</p>");
+            out.println("<p>No has seleccionado ninguna comida.</p>");
         }
 
         out.println("<a href='/index.html'>Volver al Formulario</a>");

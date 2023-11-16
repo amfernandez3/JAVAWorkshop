@@ -21,7 +21,7 @@ public class LenguajesServlet extends HttpServlet {
         String lenguaje = request.getParameter("lenguaje");
 
         // Responde con los lenguajes seleccionados
-        out.println("<h2>Te dusta el lenguaje:</h2>");
+        out.println("<h2>Te gusta el lenguaje:</h2>");
         if (lenguaje != null && !lenguaje.isEmpty()) {
             out.println("<p>" + lenguaje + "</p>");
         } else {

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Búsquedas de Productos</title>
+</head>
+<body>
+<h1>Búsquedas de Productos</h1>
+<form action="/buscar" method="post">
+  <label for="seccion">Sección:</label>
+  <input type="text" id="seccion" name="seccion" required>
+  <br>
+  <input type="submit" value="Buscar">
+</form>
+
+<!-- Mostrar los resultados de la búsqueda -->
+<h2>Resultados de la Búsqueda:</h2>
+<table border="1">
+  <tr>
+    <th>Nombre</th>
+    <th>Sección</th>
+    <th>Precio</th>
+    <th>Stock</th>
+  </tr>
+
+  <tr th:each="producto : ${resultados}">
+    <td th:text="${producto.nombre}"></td>
+    <td th:text="${producto.seccion}"></td>
+    <td th:text="${producto.precio}"></td>
+    <td th:text="${producto.stock}"></td>
+  </tr>
+</table>
+</body>
+</html>

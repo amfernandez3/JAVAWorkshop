@@ -58,6 +58,15 @@ public class ServletConfig {
      */
     @Bean
     public ServletRegistrationBean<PaisesServlet> PaisesServletRegistrationBean() {
-        return new ServletRegistrationBean<>(new PaisesServlet(), "/LenguajesServlet");
+        return new ServletRegistrationBean<>(new PaisesServlet(), "/PaisesServlet");
+    }
+
+    /**
+     * Servlet que responde a la petición HTTP /ComidasServlet
+     * @return respuesta a la petición HTTP
+     */
+    @Bean
+    public ServletRegistrationBean<ComidasServlet> ComidasServletRegistrationBean() {
+        return new ServletRegistrationBean<>(new ComidasServlet(), "/ComidasServlet");
     }
 }

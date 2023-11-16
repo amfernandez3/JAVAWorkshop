@@ -22,7 +22,7 @@ public class TablaServlet extends HttpServlet {
         for (int i = 1; i <= 10; i++) {
             out.println("<tr>");
             for (int j = 1; j <= 10; j++) {
-                out.println("<td>" + i + "x" + j + "</td>");
+                out.println("<td>" + i + "x" + j + "=" + (i * j) + "</td>");
             }
             out.println("</tr>");
         }
