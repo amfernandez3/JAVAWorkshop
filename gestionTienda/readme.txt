@@ -1,28 +1,29 @@
-El proyecto sigue una estructura básica de una aplicación Spring Boot :
+# Estructura del Proyecto Spring Boot
 
-src/main/java: Contiene los archivos fuente de Java.
+El proyecto sigue una estructura básica de una aplicación Spring Boot:
 
-com.cursojava: Paquete principal.
-TiendaApplication.java: Clase principal para ejecutar la aplicación.
-src/main/resources/static: Contiene las páginas HTML.
-pom.xml: Archivo de configuración de Maven.
+- **src/main/java:** Contiene los archivos fuente de Java.
+  - **com.cursojava:** Paquete principal.
+    - `TiendaApplication.java:` Clase principal para ejecutar la aplicación.
 
-Funcionalidades de la aplicación:
+- **src/main/resources/static:** Contiene las páginas HTML.
+- `pom.xml:` Archivo de configuración de Maven.
 
-La aplicación consiste en un CRUD estándar de productos.
+## Funcionalidades de la Aplicación
 
-Búsquedas: Permite buscar productos por sección.
+La aplicación consiste en un CRUD estándar de productos con las siguientes operaciones:
 
-Altas: Permite dar de alta nuevos productos llenando todas sus propiedades.
+- **Búsquedas:** Permite buscar productos por sección.
+- **Altas:** Permite dar de alta nuevos productos llenando todas sus propiedades.
+- **Eliminación:** Permite la eliminación de un producto.
+- **Modificación:** Permite cambiar el precio de un producto.
 
-Eliminación: Permite la eliminación de un producto.
+## Tecnologías Utilizadas
 
-Modificación: Permite cambiar el precio de un producto.
+- Spring Boot
+- Maven
+- Servlets
+- Java EE
 
-Tecnologías Utilizadas
-Spring Boot
-Maven
-Servlets
-Java EE
-
-Servidor tomcat.
+**Servidor:**
+- Tomcat
